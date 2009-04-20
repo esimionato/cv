@@ -20,6 +20,9 @@
 % Don't like 10pt? Try 11pt or 12pt
 \documentclass[10pt]{article}
 
+% Polish language
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 % This is a helpful package that puts math inside length specifications
 \usepackage{calc}
 
@@ -172,9 +175,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\makeheading{Theodore P.~Pavlic}
+\makeheading{Dawid Ciężarkiewicz}
 
-\section{Contact Information}
+\section{
+%en Contact Information
+%pl Dane kontaktowe
+}
 %
 % NOTE: Mind where the & separators and \\ breaks are in the following
 %       table.
@@ -185,175 +191,112 @@
 \newlength{\rcollength}\setlength{\rcollength}{1.85in}%
 %
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-\href{http://www.ece.osu.edu/}%
-     {Department of Electrical and Computer Engineering} & \\
-\href{http://www.osu.edu/}{The Ohio State University}
-                           & \textit{Voice:} (614) 292-2572 \\
-205 Dreese Labs            & \textit{Fax:} (614) 292-7596 \\
-2015 Neil Avenue           & \textit{E-mail:}
-\href{mailto:pavlic.3@osu.edu}{pavlic.3@osu.edu}\\
-Columbus, OH  43210 USA    & \textit{WWW:}
-\href{http://www.tedpavlic.com/}{www.tedpavlic.com}\\
+\input{cv-address1}          &
+%en \textit{Mobile:
+%pl \textit{Telefon:
+}\input{cv-mobile} \\
+\input{cv-address2} & \textit{E-mail:}
+\href{mailto:dpc@ucore.info}{dpc@ucore.info}\\
+%en Poland 
+   & \textit{WWW:}
+\href{http://dpc.ucore.info/}{dpc.ucore.info}\\
 \end{tabular}
 
-\section{Security Clearance} 
-%
-Department of Defense Top Secret SCI with polygraph (expired: 2002) 
+%en \section{Citizenship}
+%en Polish
 
-\section{Citizenship}
-%
-USA
+\section{
+%en Personal Statement
+%pl Profil Osobisty
+}
+%en I'm very flexible, optymistic person with a strong analytic mind.
+%en I consider myself to be a self-learnier - with inborn predisposition to acquire and utilize new knowledge. 
+%en However I enjoy collaboration and teamwork.
+%en Fond of wide area of my experience and interest I'm always seeking opportunities to
+%en use and develop my skills. I enjoy challanging work and dealing with
+%en cutting-edge technology.
+%pl Jestem bardzo elastyczną, optymistycznie nastawioną osobą
+%pl obdarzoną bardzo analitycznym umysłem.
+%pl Uważam się za samouka -
+%pl posiadam wrodzoną predyspozycję do zdobywania wiedzy i wykorzystywania jej w praktyce.
+%pl Lubię jednak współpracę i pracę w grupie.
+%pl Świadomy szerokiego obszaru swych zainteresowań i doświadczenia,
+%pl zawsze poszukuję okazji do rozwoju i zdobywania
+%pl nowych umiejętności.
+%pl Lubię wymagające projekty i pracę z najnowszymi technologiami.
 
-\section{Research Interests}
+\section{
+%en Profesional Interests
+%pl Zainteresowania Zawodowe
+}
 %
-Control theory, communication theory, behavioral ecology, cooperation
-theory, engineering education 
+%en Unix system software development and administration, embedded devices and low level programming,
+%en microkernels,
+%en networking, real time communication, cryptography,
+%en software design, programming languages desing and development
+%pl rozwój oprogramowania systemowego i administracja systemami Unixowymi,
+%pl oprogramowanie niskopoziomowe i systemy embedded, mikrojądra,
+%pl sieci komputerowe, komunikacja czasu rzeczywistego, kryptografia,
+%pl projektowanie oprogramowania, projektowanie i rozwój języków programowania
 
-\section{Education}
+\section{
+%en Education
+%pl Edukacja
+}
 %
-\href{http://www.osu.edu/}{\textbf{The Ohio State University}}, 
-Columbus, Ohio USA
+\href{http://www.polsl.pl/}
+%en {\textbf{Silesia University of Technology}},
+%pl {\textbf{Politechnika Śląska}},
+Gliwice
+%en, Poland
 \begin{outerlist}
 
-\item[] M.S., 
-        \href{http://www.ece.osu.edu/}
-             {Electrical and Computer Engineering} 
-        (expected graduation date: June 2007)
+\item[]
+        \href{http://www.polsl.pl/rau}
+%en             {Department of Automatics, Electronics and Computer Science} 
+%pl             {Wydział Automatyki, Elektroniki i Informatyki} 
+%en        (currently at the last term)
+%pl        (obecnie na ostatnim semestrze)
         \begin{innerlist}
-        \item Thesis Topic: Optimal Foraging Theory Revisited
-        \item Advisor: 
-              \href{http://www.ece.osu.edu/~passino/}
-                   {Professor Kevin M.~Passino}
-        \item Area of Study: Control Engineering
+%en        \item Thesis Topic: Netfilter
+%en          - filering network traffic in the Linux OS
+%pl        \item Temat Pracy: Netfilter
+%pl          - filtrowanie ruchu sieciowego w systemie Linux
+        \item
+%en          Advisor: 
+%pl          Prowadzący: 
+              %\href{}
+%en                   {D. Eng. Jacek Lach}
+%pl                   {dr inż. Jacek Lach}
         \end{innerlist}
-
-\item[] B.S., 
-        \href{http://www.ece.osu.edu/}
-             {Electrical and Computer Engineering}, June 2004
-        \begin{innerlist}
-        \item \emph{Magna cum Laude}, With Honors in Engineering
-        \item Electrical specialization (emphasis on electromagnetics and digital computers)
-        \item Minor in \href{http://www.cse.ohio-state.edu/}
-                            {Computer and Information Systems} 
-              (programming and algorithms track)
-        \end{innerlist}
-
 \end{outerlist}
 
-\section{Awards} 
+\section{
+%en Awards
+%pl Wyróżnienia
+} 
 %
-\href{http://www.nsf.gov/}{National Science Foundation}
+\href{http://www.oi.edu.pl/}
+%pl {Olimpiada Informatyczna organizowana przez Mnisterstwo Edukacji Narodowej}
+%en {Polish Olympiad in Computer Science organized by Polish Ministry of Education}
+
 \begin{innerlist}
-\item \href{http://www.nsfgk12.org/}{GK-12 Fellowship}, 2006
-\item \href{http://www.nsf.gov/grfp}
-           {Graduate Research Fellowship} Honorable Mention, 2005
+%en \item {twice promoted to second stage}
+%pl \item {dwukrotny awans do drugiego etapu}
+: 2002, 2004
 \end{innerlist}
 
-\blankline
-
-\href{http://www.osu.edu}{The Ohio State University}
-\begin{innerlist}
-\item \href{http://www.gradsch.osu.edu/Content.aspx?Content=44&itemid=2}
-           {Dean's Distinguished University Fellowship}, 2004
-\item Electrical and Computer Engineering Bradshaw Scholarship,
-        2002--2004
-\item Electrical and Computer Engineering Shafstall Scholarship,
-        2001--2003
-\item University Scholarship, 1999--2003
-\end{innerlist}
-
-\section{Academic Experience}
-\href{http://www.osu.edu}{\textbf{The Ohio State University}}, 
-Columbus, Ohio USA
-\begin{outerlist}
-\item[] \textit{Graduate Student}%
-        \hfill \textbf{June 2004 to present}
-\begin{innerlist}
-\item \href{http://www.gradsch.osu.edu/Content.aspx?Content=44&itemid=2}
-           {Dean's Distinguished University Fellow}
-      (June 2004 to present)
-        \begin{innerlist}
-        \item[] Includes current M.S.~research and course work.
-        \end{innerlist}
-\item \href{http://www.nsfgk12.org/}
-           {National Science Foundation GK-12 Fellow}
-      (September 2006 to October 2007)
-        \begin{innerlist}
-        \item[] Developed, implemented, and evaluated daily fourth grade
-                science lessons for a local inner-city public school
-                class.
-        \end{innerlist}
-\end{innerlist}
-
-\item[] \textit{Instructor}% 
-        \hfill \textbf{March 2002 to June 2004}
-\begin{innerlist}
-\item Member of \href{http://feh.eng.ohio-state.edu/}
-                     {Fundamentals of Engineering for Honors} 
-      instructional team.
-\item Special graduate teaching appointment as undergraduate.
-\item Lectured weekly laboratory on engineering fundamentals (ENG H191,
-        H192, and H193).
-\item Trained in-class undergraduate teaching assistants in laboratory
-        procedure.
-\item Graded weekly lab reports and provided laboratory exams.
-\end{innerlist}
-
-\item[] \textit{Teaching Assistant}%
-        \hfill \textbf{September 2000 to March 2002}
-\begin{innerlist}
-\item Assisted \href{http://feh.eng.ohio-state.edu/}
-                    {Fundamentals of Engineering for Honors}
-      instructional team.
-\item Provided in-class support to first-year engineering students (ENG
-        H191, H192, and H193).
-\item Graded daily assignments on programming and drafting.
-\end{innerlist}
-
-\item[] \textit{Undergraduate Researcher}%
-        \hfill \textbf{September 2000 to March 2002}
-\begin{innerlist}
-\item Participated in the
-        \href{http://www.cse.ohio-state.edu/europa/}{Europa
-        Undergraduate Research Forum}, a part of the
-        \href{http://www.cse.ohio-state.edu/rsrg/}{Reusable Software
-        Research Group}.        
-\item Worked to improve undergraduate education of component based
-        software engineering topics.
-\item Researched needed changes to RESOLVE/C++ implementation for
-        ANSI/C++ compliance.
-\end{innerlist}
-
-\item[] \textit{Grader}%
-        \hfill \textbf{September 2001 to December 2001}
-\begin{innerlist}
-\item Graded daily electromagnetics assignments (ECE 311).
-\end{innerlist}
-
-\item[] \textit{Undergraduate Student}%
-        \hfill \textbf{September 1999 to June 2004}
-\end{outerlist}
-
-\section{Publications}
+\section{
+%en Publications
+%pl Publickacje
+}
 %
-Pavlic, T.P., and K.M.~Passino. Submitted. Foraging Theory for Mobile
-Agent Speed Choice. \href{http://www.elsevier.com/locate/engappai}
-                         {Engineering Applications of Artificial
-                         Intelligence}.
-
-\section{Books in Preparation}
-%
-Pavlic, T.P., B.W.~Andrews, K.M.~Passino, and T.A.~Waite. Foraging
-Theory for Engineering.
-
-\section{Conference Publications}
-%
-Freuler, R.J., M.J.~Hoffmann, T.P.~Pavlic, J.M.~Beams, J.P.~Radigan,
-P.K.~Dutta, J.T.~Demel, and E.D.~Justen. 2003. Experiences with a
-Comprehensive Freshman Hands-On Course -- Designing, Building, and
-Testing Small Autonomous Robots. Proceedings of the 2003
-\href{http://www.asee.org/}{American Society for Engineering Education}
-Annual Conference \& Exposition.
+Dawid Ciężarkiewicz,
+\href{http://www.software20.org/pl/linuxplus/issues/9\_2007.html}
+                         {Ara – uwierzytelnianie w kolorach},
+%pl magazyn Linux+
+%en Linux+ magazine
+9/2007.
 
 \section{Professional Experience}
 %

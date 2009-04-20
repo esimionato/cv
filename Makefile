@@ -22,11 +22,11 @@ en-pub-adm: en-pub
 
 en-dev: en
 	cat cv-en.tex | sed -e 's/%dev//g' > cv-en-dev.tex
-	pdflatex cv-en-pub-dev.tex
+	pdflatex cv-en-dev.tex
 
 en-adm: en
 	cat cv-en.tex | sed -e 's/%adm//g' > cv-en-adm.tex
-	pdflatex cv-en-pub-adm.tex
+	pdflatex cv-en-adm.tex
 
 pl-pub-dev: pl-pub
 	cat cv-pl-pub.tex | sed -e 's/%dev//g' > cv-pl-pub-dev.tex
@@ -38,11 +38,11 @@ pl-pub-adm: pl-pub
 
 pl-dev: pl
 	cat cv-pl.tex | sed -e 's/%dev//g' > cv-pl-dev.tex
-	pdflatex cv-pl-pub-dev.tex
+	pdflatex cv-pl-dev.tex
 
 pl-adm: pl
 	cat cv-pl.tex | sed -e 's/%adm//g' > cv-pl-adm.tex
-	pdflatex cv-pl-pub-adm.tex
+	pdflatex cv-pl-adm.tex
 
 
 
