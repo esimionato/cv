@@ -148,6 +148,14 @@
          \marginpar{
          \raggedright \scshape #1}#2}
 
+\renewcommand{\subsection}[2]%
+        {\pagebreak[2]\vspace{0.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{subsection}{#1}%
+         \hspace{0in}%
+         \marginpar{\scriptsize
+         \raggedright \scshape #1}#2}
+
+
 % An itemize-style list with lots of space between items
 \newenvironment{outerlist}[1][\enskip\textbullet]%
         {\begin{itemize}[#1]}{\end{itemize}%
@@ -177,10 +185,9 @@
 \begin{document}
 \makeheading{Dawid Ciężarkiewicz}
 
-\section{
-%en Contact Information
-%pl Dane kontaktowe
-}
+
+%en \section{Contact Information}
+%pl \section{Dane kontaktowe}
 %
 % NOTE: Mind where the & separators and \\ breaks are in the following
 %       table.
@@ -205,12 +212,11 @@
 %en \section{Citizenship}
 %en Polish
 
-\section{
-%en Personal Statement
-%pl Profil Osobisty
-}
+%en \section{Personal Statement}
+%pl \section{Profil Osobisty}
+%
 %en I'm very flexible, optymistic person with a strong analytic mind.
-%en I consider myself to be a self-learnier - with inborn predisposition to acquire and utilize new knowledge. 
+%en I consider myself to be a self-learner - with inborn predisposition to acquire and utilize new knowledge. 
 %en However I enjoy collaboration and teamwork.
 %en Fond of wide area of my experience and interest I'm always seeking opportunities to
 %en use and develop my skills. I enjoy challanging work and dealing with
@@ -225,11 +231,11 @@
 %pl nowych umiejętności.
 %pl Lubię wymagające projekty i pracę z najnowszymi technologiami.
 
-\section{
-%en Profesional Interests
-%pl Zainteresowania Zawodowe
-}
-%
+
+%en \section{Profesional Interests}
+%pl \section{Zainteresowania Zawodowe}
+%en %
+%pl
 %en Unix system software development and administration, embedded devices and low level programming,
 %en microkernels,
 %en networking, real time communication, cryptography,
@@ -239,10 +245,9 @@
 %pl sieci komputerowe, komunikacja czasu rzeczywistego, kryptografia,
 %pl projektowanie oprogramowania, projektowanie i rozwój języków programowania
 
-\section{
-%en Education
-%pl Edukacja
-}
+
+%en \section{Education}
+%pl \section{Edukacja}
 %
 \href{http://www.polsl.pl/}
 %en {\textbf{Silesia University of Technology}},
@@ -271,10 +276,9 @@ Gliwice
         \end{innerlist}
 \end{outerlist}
 
-\section{
-%en Awards
-%pl Wyróżnienia
-} 
+
+%en \section{Awards}
+%pl \section{Wyróżnienia}
 %
 \href{http://www.oi.edu.pl/}
 %pl {Olimpiada Informatyczna organizowana przez Mnisterstwo Edukacji Narodowej}
@@ -286,10 +290,9 @@ Gliwice
 : 2002, 2004
 \end{innerlist}
 
-\section{
-%en Publications
-%pl Publickacje
-}
+
+%en \section{Publications}
+%pl \section{Publikacje}
 %
 Dawid Ciężarkiewicz,
 \href{http://www.software20.org/pl/linuxplus/issues/9\_2007.html}
@@ -298,202 +301,139 @@ Dawid Ciężarkiewicz,
 %en Linux+ magazine
 9/2007.
 
-\section{Professional Experience}
+%en \section{Professional Experience}
+%pl \section{Doświadczenie Zawodowe}
 %
-\href{http://www.ni.com/}{\textbf{National Instruments}}, 
-Austin, Texas USA
+\textbf{\href{http://www.capgemini.pl/}{Capgemini} Polska Sp. z o.o.}, 
+Warszawa
 \begin{outerlist}
 
-\item[] \textit{Hardware R\&D Intern for Multifunction DAQ}%
-        \hfill \textbf{June 2003 to September 2003}
+\item[] \textit{
+%pl Specjalista ds. Wsparcia Technicznego
+%en Technical Support Specialist
+}%
+        \hfill \textbf{
+%en March 2008 to present day
+%pl Marzec 2008 - obecnie
+}
 \begin{innerlist}
-\item Designed final verification testing fixture for use with STC2 MIO
-        products.
-\item Designed and executed study of the effect of varying burn-in time
-        on long-term drift of common industry voltage references.
-\end{innerlist}
-
-\item[] \textit{Hardware R\&D Intern for Multifunction DAQ}%
-        \hfill \textbf{June 2002 to September 2002}
-\begin{innerlist}
-\item Designed and performed validation tests on new 16-bit 800 kHz
-        NI-6120 SMIO DAQ board.
-
-\item Designed high quality filter/amplifier source for use with NI-5411
-        arbitrary function generator.
+\item
+%pl Zdalne wsparcie techniczne oprogramowania i sprzętu dla anglojęzycznych klientów firmy SUN Microsystem,
+%pl w szczególności: serwerów w architekturach SPARC orax X64 (klasy Entry-Level, Midrange, CoolThreads, stacji roboczych),
+%pl systemów telekomunikacyjnych, macierzy dyskowych, bibliotek taśmowych oraz systemu Solaris
+%pl i jego najważniejszych usług (SMF, SVM, VxVM, NFS ...)
+%en Remote technical support of software and hardware for English speaking SUN Microsystems customers:
+%en SPARC and X64 architectures (Entry-Level, Midrange Servers, Workstations, Telco systems),
+%en Storage Arrays, Tape Libraries and Solaris OS and software (SMF, SVM, VxVM, NFS ...)
 \end{innerlist}
 
 \end{outerlist}
 
 \blankline
 
-\textbf{\href{http://www.ibm.com/}{IBM} Network Storage}, 
-Research Triangle Park, North Carolina USA
+\href{http://asn.pl/}{\textbf{ASN}}, 
+ul. Katowicka 115, 41-500 Chorzów
 \begin{outerlist}
 
-\item[] \textit{Core Systems Software Developer for FlexNAS}%
-        \hfill \textbf{June 2001 to September 2001}
+\item[] \textit{
+%en Administrator/Developer
+%pl Administrator/Programista
+}%
+        \hfill \textbf{
+%en May 2005 to August 2007
+%pl Maj 2005 - Sierpień 2007
+}
 \begin{innerlist}
-\item Designed and implemented high-availability, redundant internode
-        communications subsystem.
-\item Participated in software development of various vital box
-        services.
+\item
+%en Monitoring and administration of ISP network for about 300 end-customers.
+%pl Administracja i monitoring sieci dostępowej dla około 300 klientów końcowych.
+\item 
+%en Creation and modification of software used for internal usage (system software, Linux kernel, web-based services).
+%pl Tworzenie i modyfikacja oprogramowania na potrzeby wewnętrzne (oprogramowanie systemowe, jądro systemu Linux, serwisy webowe).
+\item
+%en Creation and developing Linux distribution for network routers and bridges
+%pl Tworzenie i rozwijanie dystrybucji systemu Linux przeznaczonej na routery i mosty sieciowe
+- \href{http://lintrack.org}{Lintrack}
 \end{innerlist}
 
 \end{outerlist}
 
-\blankline
-
-\href{http://www.calltech.com/}{\textbf{CallTech Communications}},
-Columbus, Ohio USA
-\begin{outerlist}
-
-\item[] \textit{Information Technology Systems Engineer}%
-        \hfill \textbf{June 1997 to May 2001}
-\begin{innerlist}
-\item Responsible for the acquisition, setup, maintenance, and
-        administration of all Internet hardware and software supporting
-        \href{http://www.netwalk.com/}{NetWalk} Internet service
-        and web presence provider.
-\item Designed and implemented state of the art open source
-        high-availability load balancing system supporting thousands of
-        virtual servers.
-\item Developed software call center support software for clients such
-        as CompuServe, AOL, and Priceline.
-\end{innerlist}
-
-\end{outerlist}
-
-\blankline
-
-MegaLinx Communications, Dublin, Ohio USA
-\begin{outerlist}
-
-\item[] \textit{Web Developer and Support Representative}%
-        \hfill \textbf{June 1995 to May 1997}
-\begin{innerlist}
-\item Produced web content for commercial clients.
-\item Assisted in administration of UltraSPARC, x86, 68020, 68030, and
-        PowerPC systems running Sun Solaris, Linux, Microsoft DOS,
-        Microsoft Windows NT, and Apple Macintosh operating systems.
-\item Developed multi-platform open source file sharing solution.
-\item Provided technical support for Internet and web presence
-        customers.
-\end{innerlist}
-
-\end{outerlist}
-
-\section{Service}
+%en \section{Technical Skills} 
+%pl \section{Umiejętności Techniczne} 
 %
-Director of Computers, 
-\href{http://ec.osu.edu/}{Engineers' Council},
-\href{http://www.osu.edu/}{The Ohio State University}, 2002
+%en Extensive hardware and software experience in networking and
+%en        information technology
+%pl Bogate doświadczenie ze sprzętem
+%pl oraz oprogramowaniem w dziedzinach związanych z informatyką
+%pl i sieciami komputerowymi
 
 \blankline
 
-\href{http://www.osufirst.org/}{OSU FIRST Robotics Team}, 
-\href{http://www.osu.edu}{The Ohio State University}, 2000--2004
-\begin{innerlist}
-\item Introduced middle school and high school students to science and
-        technology by participating with them in national robotics
-        competitions.
-\item Led 2002 team to regional silver medal
-        \href{http://www.firstwiki.org/Engineering_Inspiration_Award}
-             {\emph{Engineering Inspiration Award}}.
-\item \emph{Lead Team Mentor}, 2002--2004 
-\item \emph{Component Design Team Lead Mentor}, 2001--2002
-\end{innerlist}
+%en \subsection{Programming languages}
+%pl \subsection{Języki programowania}
+Assembler
+%pl (głównie x86)
+%en (mostly x86)
+, C, C++, D, Java, JavaScript, Pascal, Python, Perl, PHP, Ruby
+%en UNIX shell scripting,
+%pl skrypty shellowe UNIX
+SQL,
+%pl i inne
+%en and others
 
 \blankline
 
-\href{http://www.linuxvirtualserver.org/}
-     {Linux Virtual Server Project}, 1999--2000
-\begin{innerlist}
-\item Early member of the team that formed the open source project that
-        is now an important load balancing solution for the Linux
-        software platform. 
-\end{innerlist}
+%en \subsection{Programming experience}
+%pl \subsection{Doświadczenie programistyczne}
+%en databases, system and networking software,
+%pl bazy danych, oprogramowanie systemowe i sieciowe,
+%en web-based applications,
+%pl aplikacje webowe,
+Unix API,
+%en embedded systems,
+%pl systemy wbudowane,
+%en Linux kernel,
+%pl jądro systemu Linux,
+XML, XMPP, Qt, UML,
+%en revision systems
+%pl systemy rewizjonujące
+(RCS, CVS, SVN, Git ...)
 
 \blankline
 
-\href{http://www.gcfn.org/}
-     {Greater Columbus Free-Net}, 1995--1997
-\begin{innerlist}
-\item Provided technical support services.
-\end{innerlist}
+%en \subsection{Applications}
+%pl \subsection{Aplikacje użytkowe}
+\TeX{}, \LaTeX{}, B\textsc{ib}\TeX{}, Microsoft Office
+%en      ,  and other common productivity packages for
+%pl  i inne znane aplikacje użytkowe dla systemów
+Windows, OS X
+%en , and
+%pl i
+  Linux
+%en platforms
 
 \blankline
 
-CompuTeen Bulletin Board System, 1993--1995
-\begin{innerlist}
-\item Administrated dial-up bulletin board system.
-\item Founded and administrated TeenLiNK, an international electronic
-        mail network that spread through the United States, Canada, and
-        Australia and delivered mail over a series of electronic dial-up
-        drop offs.
-\end{innerlist}
+%pl \subsection{Administracja}
+%en \subsection{Administration}
+ Microsoft Windows XP/2000, Apple OS X, Linux, BSD,
+        Solaris
+%en , and other UNIX variants
+%pl i inne warianty systemu UNIX
+;
+%pl sieci TCP/IP
+%en TCP/IP networks
 
+%pl \subsection{Hardware support}
+%en \subsection{Diagnoza sprzętu}
+%pl Doświadczenie w ogólnopojętej diagnozie i administracji serwerami oraz sprzętem peryferyjnym, ze szczególnym uwzględniem
+%pl rozwiązań firmy \href{http://sun.com}{SUN Microsystems}
+%en Experienced in general troubleshooting and administration of servers and pheripheral hardware, especially 
+%en \href{http://sun.com}{SUN Microsystems} solutions.
 
-\section{Technical Skills} 
-%
-Extensive hardware and software experience in networking and
-        information technology
-
-\blankline
-
-\href{http://www.mathworks.com/products/matlab/}{\textsc{Matlab}} 
-        experience: linear algebra, Fourier transforms,
-        nonlinear numerical methods, polynomials, statistics,
-        visualization
-
-\blankline
-
-\href{http://www.mathworks.com/products/matlab/}{\textsc{Matlab}} 
-        toolboxes: communications, control system, filter
-        design, genetic algorithm and direct search, signal processing,
-        system identification
-
-\blankline
-
-Instrumentation and Control: 
-        \href{http://www.dspaceinc.com/}{dSPACE} hardware and software,
-        \href{http://www.mathworks.com/products/simulink/}{Simulink}, 
-        \href{http://www.ni.com/}{LabVIEW} and other 
-        \href{http://www.ni.com}{National Instruments} 
-        control and data acquisition hardware and software
-
-\blankline
-
-Programming: C, C++, Pascal, Perl, PHP, Lisp, UNIX shell scripting, SQL,
-        RCS, CVS, SVN, and others
-
-\blankline
-
-Applications: \TeX{}, \LaTeX{}, B\textsc{ib}\TeX{}, Microsoft Office,
-        and other common productivity packages for Windows, OS X, and
-        Linux platforms
-
-\blankline
-
-Operating Systems: Microsoft Windows XP/2000, Apple OS X, Linux, BSD,
-        IRIX, AIX, Solaris, and other UNIX variants
-
-\section{Mathematical Expertise} 
-%
-Linear and Nonlinear Systems Theory
-
-\blankline
-
-Probability, Random Variables, and Stochastic Processes 
-
-\blankline
-
-Dynamic Optimization
-
-\blankline
-
-Game Theory
-
+%en \section{Courses and trainings)
+%pl \section {Szkolenia}
+to be done
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

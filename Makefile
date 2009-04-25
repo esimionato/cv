@@ -1,23 +1,23 @@
 all: en-pub-dev en-pub-adm en-adm en-dev pl-pub-dev pl-pub-adm pl-dev pl-adm
 
 en: cv.tex
-	cat cv.tex | sed -e 's/%en//g' > cv-en.tex
+	cat cv.tex | sed -e 's/%en //g' > cv-en.tex
 
 pl: cv.tex
-	cat cv.tex | sed -e 's/%pl//g' > cv-pl.tex
+	cat cv.tex | sed -e 's/%pl //g' > cv-pl.tex
 
 en-pub: en
-	cat cv-en.tex | sed -e 's/%pub//g' > cv-en-pub.tex
+	cat cv-en.tex | sed -e 's/%pub //g' > cv-en-pub.tex
 
 pl-pub: pl
-	cat cv-pl.tex | sed -e 's/%pub//g' > cv-pl-pub.tex
+	cat cv-pl.tex | sed -e 's/%pub //g' > cv-pl-pub.tex
 
 en-pub-dev: en-pub
-	cat cv-en-pub.tex | sed -e 's/%dev//g' > cv-en-pub-dev.tex
+	cat cv-en-pub.tex | sed -e 's/%dev //g' > cv-en-pub-dev.tex
 	pdflatex cv-en-pub-dev.tex
 
 en-pub-adm: en-pub
-	cat cv-en-pub.tex | sed -e 's/%adm//g' > cv-en-pub-adm.tex
+	cat cv-en-pub.tex | sed -e 's/%adm //g' > cv-en-pub-adm.tex
 	pdflatex cv-en-pub-adm.tex
 
 en-dev: en
