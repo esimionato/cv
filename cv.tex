@@ -26,6 +26,9 @@
 % This is a helpful package that puts math inside length specifications
 \usepackage{calc}
 
+% For comment
+\usepackage{verbatim}
+
 % Layout: Puts the section titles on left side of page
 \reversemarginpar
 
@@ -93,7 +96,8 @@
           {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
 \lfoot{\hspace{\footpageshift}%
        \parbox{4in}{\, \hfill %
-                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%en                   \arabic{page} of \protect\pageref*{LastPage} % +LP
+%pl                   \arabic{page} z \protect\pageref*{LastPage}  % +LP
 %                    \arabic{page}                               % -LP
                     \hfill \,}}
 
@@ -198,11 +202,23 @@
 \newlength{\rcollength}\setlength{\rcollength}{1.85in}%
 %
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-\input{cv-address1}          &
+%pub \begin{comment}
+\input{cv-address1}
+%pub \end{comment}
+%pub Katowice
+&
 %en \textit{Mobile:
 %pl \textit{Telefon:
-}\input{cv-mobile} \\
-\input{cv-address2} & \textit{E-mail:}
+}
+%pub \begin{comment}
+\input{cv-mobile}
+%pub \end{comment}
+%pub {\it - }
+\\
+%pub \begin{comment}
+\input{cv-address2}
+%pub \end{comment}
+& \textit{E-mail:}
 \href{mailto:dpc@ucore.info}{dpc@ucore.info}\\
 %en Poland 
    & \textit{WWW:}
@@ -276,20 +292,21 @@ Gliwice
         \end{innerlist}
 \end{outerlist}
 
-
+\begin{comment}
 %en \section{Awards}
 %pl \section{Wyróżnienia}
 %
 \href{http://www.oi.edu.pl/}
 %pl {Olimpiada Informatyczna organizowana przez Mnisterstwo Edukacji Narodowej}
-%en {Polish Olympiad in Computer Science organized by Polish Ministry of Education}
+%en {Polish High-School Contenst in Computer Science organized by
+%en Polish Ministry of Education}
 
 \begin{innerlist}
 %en \item {twice promoted to second stage}
 %pl \item {dwukrotny awans do drugiego etapu}
 : 2002, 2004
 \end{innerlist}
-
+\end{comment}
 
 %en \section{Publications}
 %pl \section{Publikacje}
@@ -304,7 +321,7 @@ Dawid Ciężarkiewicz,
 %en \section{Professional Experience}
 %pl \section{Doświadczenie Zawodowe}
 %
-\textbf{\href{http://www.capgemini.pl/}{Capgemini} Polska Sp. z o.o.}, 
+\textbf{\href{http://www.capgemini.pl/}{Capgemini Polska} Sp. z o.o.}, 
 Warszawa
 \begin{outerlist}
 
@@ -322,7 +339,7 @@ Warszawa
 %pl w szczególności: serwerów w architekturach SPARC orax X64 (klasy Entry-Level, Midrange, CoolThreads, stacji roboczych),
 %pl systemów telekomunikacyjnych, macierzy dyskowych, bibliotek taśmowych oraz systemu Solaris
 %pl i jego najważniejszych usług (SMF, SVM, VxVM, NFS ...)
-%en Remote technical support of software and hardware for English speaking SUN Microsystems customers:
+%en Remote software and hardware technical support for English speaking SUN Microsystems customers:
 %en SPARC and X64 architectures (Entry-Level, Midrange Servers, Workstations, Telco systems),
 %en Storage Arrays, Tape Libraries and Solaris OS and software (SMF, SVM, VxVM, NFS ...)
 \end{innerlist}
@@ -345,7 +362,7 @@ ul. Katowicka 115, 41-500 Chorzów
 }
 \begin{innerlist}
 \item
-%en Monitoring and administration of ISP network for about 300 end-customers.
+%en Monitoring and administration of ISP network for about 300 end-users.
 %pl Administracja i monitoring sieci dostępowej dla około 300 klientów końcowych.
 \item 
 %en Creation and modification of software used for internal usage (system software, Linux kernel, web-based services).
@@ -353,7 +370,7 @@ ul. Katowicka 115, 41-500 Chorzów
 \item
 %en Creation and developing Linux distribution for network routers and bridges
 %pl Tworzenie i rozwijanie dystrybucji systemu Linux przeznaczonej na routery i mosty sieciowe
-- \href{http://lintrack.org}{Lintrack}
+- \href{http://lintrack.org}{Lintrack}.
 \end{innerlist}
 
 \end{outerlist}
@@ -372,11 +389,11 @@ ul. Katowicka 115, 41-500 Chorzów
 %en \subsection{Programming languages}
 %pl \subsection{Języki programowania}
 Assembler
-%pl (głównie x86)
-%en (mostly x86)
-, C, C++, D, Java, JavaScript, Pascal, Python, Perl, PHP, Ruby
+%pl (głównie x86),
+%en (mostly x86),
+C, C++, D, Java, JavaScript, Pascal, Python, Perl, PHP, Ruby,
 %en UNIX shell scripting,
-%pl skrypty shellowe UNIX
+%pl skrypty powłoki UNIX
 SQL,
 %pl i inne
 %en and others
@@ -395,45 +412,70 @@ Unix API,
 %en Linux kernel,
 %pl jądro systemu Linux,
 XML, XMPP, Qt, UML,
-%en revision systems
-%pl systemy rewizjonujące
-(RCS, CVS, SVN, Git ...)
+%en working with revision systems
+%pl praca z systemami rewizjonującymi
+(RCS, CVS, SVN, Git
+%en and other)
+%pl i inne)
 
 \blankline
 
 %en \subsection{Applications}
 %pl \subsection{Aplikacje użytkowe}
-\TeX{}, \LaTeX{}, B\textsc{ib}\TeX{}, Microsoft Office
-%en      ,  and other common productivity packages for
-%pl  i inne znane aplikacje użytkowe dla systemów
-Windows, OS X
-%en , and
-%pl i
-  Linux
+\TeX{}, \LaTeX{}, B\textsc{ib}\TeX{}, Microsoft Office,
+%en and other common productivity packages for
+%pl inne znane aplikacje użytkowe dla systemów
+Windows,
+%en OS X, and
+%pl OS X i
+ Linux
 %en platforms
 
 \blankline
 
 %pl \subsection{Administracja}
 %en \subsection{Administration}
- Microsoft Windows XP/2000, Apple OS X, Linux, BSD,
+ Microsoft Windows XP/2000, Linux, BSD,
         Solaris
-%en , and other UNIX variants
-%pl i inne warianty systemu UNIX
-;
-%pl sieci TCP/IP
-%en TCP/IP networks
+%en and other UNIX variants;
+%pl i inne warianty systemu UNIX;
+%pl sieci TCP/IP;
+%en TCP/IP networks;
+%pl usługi sieciowe (apache, XMPP, email, SVN i inne)
+%en network services (apache, XMPP, email, SVN and other)
 
-%pl \subsection{Hardware support}
-%en \subsection{Diagnoza sprzętu}
-%pl Doświadczenie w ogólnopojętej diagnozie i administracji serwerami oraz sprzętem peryferyjnym, ze szczególnym uwzględniem
+%en \subsection{Hardware Support}
+%pl \subsection{Diagnoza Sprzętu}
+%pl Doświadczenie w diagnozie i administracji serwerami
+%pl oraz sprzętem peryferyjnym, ze szczególnym uwzględniem
 %pl rozwiązań firmy \href{http://sun.com}{SUN Microsystems}
-%en Experienced in general troubleshooting and administration of servers and pheripheral hardware, especially 
+%en Experienced in general troubleshooting and administration of
+%en servers and pheripheral hardware, especially 
 %en \href{http://sun.com}{SUN Microsystems} solutions.
 
-%en \section{Courses and trainings)
-%pl \section {Szkolenia}
+%en \section{Courses}
+%pl \section{Szkolenia}
 to be done
+
+\vfill
+%en \section{Legal Note}
+%pl \section{Nota Prawna}
+%pub \begin{comment}
+%en I~hereby authorize you to process my personal data included in my job
+%en application for the needs of the recruitment process
+%en (in accordance with the Personnel Protection Act 29.08.1997
+%en no 133 position 883)
+%pl Wyrażam zgode na przetwarzanie moich danych osobowych w celach
+%pl rekrutacyjnych zgodnie z ustawą z dn. 29.08.1997r. o ochronie danych
+%pl osobowych, Dz. U. nr 133, poz. 833.
+%pub \end{comment}
+%pub %en This is public version of Curriculum Vitae for information purposes
+%pub %en only.
+%pub %en To obtain version for recruitment process, please contact me directly.
+%pub %pl Dokument ten jest publiczną wersją mojego Curriculum Vitae przeznaczoną
+%pub %pl jedynie do celów informacyjnych. 
+%pub %pl W razie zainteresowania wersją przeznaczoną
+%pub %pl do celów rekrutacyjnych - proszę o kontakt.
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
