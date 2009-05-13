@@ -1,4 +1,7 @@
-all: en-pub-dev en-pub-adm en-adm en-dev pl-pub-dev pl-pub-adm pl-dev pl-adm
+all: dateupdate en-pub-dev en-pub-adm en-adm en-dev pl-pub-dev pl-pub-adm pl-dev pl-adm
+
+dateupdate:
+	date "+%d/%m/%y" > date
 
 en: cv.tex
 	cat cv.tex | sed -e 's/%en //g' > cv-en.tex
