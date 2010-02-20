@@ -1,4 +1,8 @@
 all: dateupdate en-pub-dev en-pub-adm en-adm en-dev pl-pub-dev pl-pub-adm pl-dev pl-adm
+	cp cv-en-pub-adm.pdf dawid.ciezarkiewicz-pub-cv-en.pdf
+	cp cv-pl-pub-adm.pdf dawid.ciezarkiewicz-pub-cv-pl.pdf
+	cp cv-en-adm.pdf dawid.ciezarkiewicz-cv-en.pdf
+	cp cv-pl-adm.pdf dawid.ciezarkiewicz-cv-pl.pdf
 
 dateupdate:
 	date "+%d/%m/%y" > date
